@@ -1,3 +1,5 @@
+/* ************** General Styles ************** */
+
 @font-face {
     font-family: "Karla";
     src: url(../fonts/Karla-Regular.woff) format("woff2");
@@ -10,7 +12,7 @@
 body {
     margin: 0;
     font-family: "Karla", sans-serif;
-    line-height: 1.7142;
+    line-height: 1.7;
 }
 
 h1,
@@ -20,7 +22,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Unica One", cursive;
+    letter-spacing: 1px;
 }
 
 ul {
@@ -34,11 +36,14 @@ a {
     text-decoration: none;
 }
 
+/* item's Position */
+
 .middle-center {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 5px;
 }
 
 .middle {
