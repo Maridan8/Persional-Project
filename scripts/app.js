@@ -8,15 +8,15 @@ changeVisibilityDropdown(DDL2nd)
 changeVisibilityDropdown(DDL3rd)
 
 /* ************** Toggle sidebar visibility ************** */
-const hamburgerMenu = document.querySelector('#hamburger-checkbox')
+const hamburgerMenu = document.querySelector('#hamburger__checkbox')
 const sidebar = document.querySelector('#sidebar')
-const wrapper = document.querySelector('#wrapper')
+const header = document.querySelector('#main-header')
 
 hamburgerMenu.addEventListener('change', (e) => {
     console.log(e.target.checked)
     if (e.target.checked) {
-        wrapper.setAttribute('class', 'moved')
+        header.setAttribute('class', 'moved')
     } else {
-        wrapper.removeAttribute('class')
+        header.removeAttribute('class')
     }
 })

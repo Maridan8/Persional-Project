@@ -58,8 +58,135 @@ a {
     justify-content: center;
 }
 
-/* ************** SideBarMenu ************** */
+/* ************** Main Header ************** */
 
+#main-header {
+    background: #000000;
+    color: #4c4c4c;
+    border-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    height: 100vh;
+    width: 96px;
+    transition: transform 500ms;
+}
+
+.logo {
+    height: 96px;
+    position: relative;
+}
+
+.main-nav__action {
+    position: relative;
+}
+
+.main-nav__action button,
+.main-nav__action #hamburger-menu {
+    width: 96px;
+    height: 96px;
+    line-height: 96px;
+    padding: 0;
+    background: transparent;
+    color: #4c4c4c;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icon-basket {
+    font-size: 22px;
+}
+
+.main-nav__action button:hover {
+    color: #ffffff;
+}
+
+/* hamburger menu */
+#hamburger__checkbox {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+    margin: unset;
+}
+
+#hamburger__lines {
+    width: 16px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger__line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    background: #4c4c4c;
+}
+
+#hamburger-menu:hover .hamburger__line {
+    transition: all 0.3s ease 0s;
+    background: #ffffff;
+}
+
+#hmg-line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+#hmg-line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+#hmg-line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line1 {
+    transform: rotate(45deg);
+}
+
+input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line2 {
+    transform: scaleY(0);
+}
+
+input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 {
+    transform: rotate(-45deg);
+}
+
+.total-product {
+    font-size: 12px;
+    background: #ffdb00;
+    color: #000000;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+#wrapper {
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+.moved {
+    transform: translate3d(250px, 0, 0);
+}
+
+/* ************** SideBar ************** */
 #sidebar {
     width: 250px;
     height: 100vh;
@@ -67,11 +194,6 @@ a {
     background-color: #151515;
     color: #ffffff;
     position: absolute;
-}
-
-.logo {
-    height: 96px;
-    position: relative;
 }
 
 #sidebar .logo {
@@ -183,140 +305,4 @@ a {
 
 #social a:hover {
     color: #000000;
-}
-
-#main-header {
-    background: #000000;
-    color: #4c4c4c;
-    border-bottom: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 9999;
-    height: 100vh;
-    width: 96px;
-    transition: transform 500ms;
-}
-
-/* ************** Vertical-Header ************** */
-
-.vertical-header--border-botom {
-    border-bottom: 1px solid #1a1a1a;
-}
-
-.vertical-header--border-top {
-    border-top: 1px solid #1a1a1a;
-}
-
-.header-actions {
-    height: calc(100% - 96px);
-}
-
-.header-action {
-    position: relative;
-}
-
-.header-action button,
-.header-action #hamburger-menu {
-    width: 96px;
-    height: 96px;
-    line-height: 96px;
-    padding: 0;
-    background: transparent;
-    color: #4c4c4c;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.icon-basket {
-    font-size: 22px;
-}
-
-.header-action button:hover {
-    color: #ffffff;
-}
-
-#hamburger-menu:hover .hamburger-line {
-    transition: all 0.3s ease 0s;
-    background: #ffffff;
-}
-
-/* hamburger menu */
-#hamburger-checkbox {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    opacity: 0;
-    cursor: pointer;
-    margin: unset;
-}
-
-#hamburger-lines {
-    width: 16px;
-    height: 13px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hamburger-line {
-    display: block;
-    height: 2px;
-    width: 100%;
-    border-radius: 10px;
-    background: #4c4c4c;
-}
-
-#hmg-line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-}
-
-#hmg-line2 {
-    transition: transform 0.2s ease-in-out;
-}
-
-#hmg-line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-}
-
-input#hamburger-checkbox[type="checkbox"]:checked+#hamburger-lines #hmg-line1 {
-    transform: rotate(45deg);
-}
-
-input#hamburger-checkbox[type="checkbox"]:checked+#hamburger-lines #hmg-line2 {
-    transform: scaleY(0);
-}
-
-input#hamburger-checkbox[type="checkbox"]:checked+#hamburger-lines #hmg-line3 {
-    transform: rotate(-45deg);
-}
-
-.total-product {
-    font-size: 12px;
-    background: #ffdb00;
-    color: #000000;
-    min-width: 20px;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 24px;
-    right: 24px;
-}
-
-/* ************** Wrapper DIV ************** */
-#wrapper {
-    position: absolute;
-    transition: transform 0.5s;
-}
-
-.moved {
-    transform: translate3d(250px, 0, 0);
 }
