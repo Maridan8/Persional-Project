@@ -38,7 +38,19 @@ a {
 
 /* item's Position */
 
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .middle-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-center__position {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -46,21 +58,11 @@ a {
     margin-top: 5px;
 }
 
-.middle {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-.flex-middle-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* ************** Main Header ************** */
 
 #main-header {
+    display: flex;
+    flex-direction: column  ;
     background: #000000;
     color: #4c4c4c;
     border-bottom: 0;
@@ -72,6 +74,11 @@ a {
     height: 100vh;
     width: 96px;
     transition: transform 500ms;
+}
+
+#main-header nav {
+    flex-grow: 1;
+    margin-bottom: 6rem;
 }
 
 .logo {
@@ -288,19 +295,19 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
     line-height: 24px;
 }
 
-#social li {
-    display: inline-block;
+#social {
+    width: 10.5rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #social a {
-    display: inline-block;
     width: 32px;
     height: 32px;
     padding: 4px;
     transition: all 350ms;
     background: #ffffff;
     color: #555555;
-    margin-right: 11.5px;
 }
 
 #social a:hover {

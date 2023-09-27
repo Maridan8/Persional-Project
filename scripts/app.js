@@ -2,6 +2,8 @@
 const DDL1st = Array.from(document.querySelectorAll('.dropdown-toggle--1st'))
 const DDL2nd = Array.from(document.querySelectorAll('.dropdown-toggle--2nd'))
 const DDL3rd = Array.from(document.querySelectorAll('.dropdown-toggle--3rd'))
+console.log(document.querySelectorAll('.dropdown-toggle--1st'))
+console.log(DDL1st)
 
 changeVisibilityDropdown(DDL1st)
 changeVisibilityDropdown(DDL2nd)
