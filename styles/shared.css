@@ -70,9 +70,9 @@ a {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 9999;
+    z-index: 100;
     height: 100vh;
-    width: 96px;
+    width: 6rem;
     transition: transform 500ms;
 }
 
@@ -82,7 +82,7 @@ a {
 }
 
 .logo {
-    height: 96px;
+    height: 6rem;
     position: relative;
 }
 
@@ -92,19 +92,19 @@ a {
 
 .main-nav__action button,
 .main-nav__action #hamburger-menu {
-    width: 96px;
-    height: 96px;
-    line-height: 96px;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
     padding: 0;
     background: transparent;
     color: #4c4c4c;
     vertical-align: middle;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .icon-basket {
-    font-size: 22px;
+    font-size: 1.37rem;
 }
 
 .main-nav__action button:hover {
@@ -124,8 +124,8 @@ a {
 }
 
 #hamburger__lines {
-    width: 16px;
-    height: 13px;
+    width: 1rem;
+    height: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -135,7 +135,7 @@ a {
     display: block;
     height: 2px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background: #4c4c4c;
 }
 
@@ -171,17 +171,17 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
 }
 
 .total-product {
-    font-size: 12px;
+    font-size: 0.75rem;
     background: #ffdb00;
     color: #000000;
-    min-width: 20px;
-    height: 20px;
-    line-height: 20px;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
     text-align: center;
     border-radius: 50%;
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 #wrapper {
@@ -190,12 +190,12 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
 }
 
 .moved {
-    transform: translate3d(250px, 0, 0);
+    transform: translate3d(15.625rem, 0, 0);
 }
 
 /* ************** SideBar ************** */
 #sidebar {
-    width: 250px;
+    width: 15.625rem;
     height: 100vh;
     overflow-y: auto;
     background-color: #151515;
@@ -208,39 +208,39 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
 }
 
 #mudules {
-    padding: 36px 12px;
+    padding: 2.25rem 0.75rem;
 }
 
 .mudule {
-    margin-bottom: 46px;
+    margin-bottom: 2.87rem;
 }
 
 .mudule-title {
-    font-size: 12px;
-    margin: 0 0 23px;
+    font-size: 0.75rem;
+    margin: 0 0 1.43rem;
     font-weight: 700;
-    line-height: 22.2846px;
+    line-height: 1.39rem;
     border-bottom: 1px solid #2f2f2f;
     font-family: inherit;
 }
 
 .mudule-title>span {
     display: inline-block;
-    padding-bottom: 11.5px;
+    padding-bottom: 0.72rem;
     border-bottom: 1px solid #ffdb00;
     margin-bottom: -1px;
 }
 
 #language-swither li {
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 0.75rem;
 }
 
 .nav-item>a {
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
-    padding: 10px 0;
+    padding: 0.62rem 0;
     display: block;
     cursor: pointer;
 }
@@ -273,26 +273,26 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
 }
 
 .nav-item>a span {
-    margin-right: 5px;
+    margin-right: 0.31rem;
 }
 
 .nav-item a span {
-    font-size: 9px;
+    font-size: 0.56rem;
     font-weight: normal;
     float: right;
 }
 
 .nav-item ul {
-    padding-left: 12px;
+    padding-left: 0.75rem;
     display: none;
 }
 
 .dropdown-menu a {
     display: block;
     color: #efefef;
-    padding: 5px 10px;
-    font-size: 13px;
-    line-height: 24px;
+    padding: 0.31rem 0.62rem;
+    font-size: 0.81rem;
+    line-height: 1.5rem;
 }
 
 #social {
@@ -302,9 +302,9 @@ input#hamburger__checkbox[type="checkbox"]:checked+#hamburger__lines #hmg-line3 
 }
 
 #social a {
-    width: 32px;
-    height: 32px;
-    padding: 4px;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
     transition: all 350ms;
     background: #ffffff;
     color: #555555;
